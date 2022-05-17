@@ -1,0 +1,33 @@
+body
+{
+    background-size: 100%;
+}
+
+h3
+{
+  background-color: white;
+  font-style: italic;
+  color: black;
+  margin: 0;
+  box-shadow: 5px 15px 50px slategrey;
+  border-color: grey;
+}
+
+span
+{
+  font-size: 18px;
+  font-style: normal;
+}
+
+#song_name
+{
+  font-size: 18px;
+  font-style: normal;
+}
+
+canvas
+{
+  margin-top: 100px;
+  border-color: steelblue;
+  border-style: dashed;
+}
