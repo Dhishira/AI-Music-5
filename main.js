@@ -67,17 +67,17 @@ function draw()
   fill("#F72F28");
   stroke("#F72F28")
 
-  song_peter_pan = song_1.isPlaying();
+  status_1 = song_1.isPlaying();
 
-  song_harry_potter = song_2.isPlaying();
+  status_2 = song_2.isPlaying();
 
   if(scoreLeftWrist > 0.2)
   {
     circle(leftWristX,leftWristY,20);
-    song_harry_potter.stop();
+    status_1.stop();
     if(song_1 == false)
     {
-      song_peter_pan.play();
+      status_1.play();
       document.getElementById("song_name").innerHTML = "Song Name - Peter Pan";
     }
   }
@@ -85,11 +85,11 @@ function draw()
   if(scoreRightWrist > 0.2)
   {
     circle(rightWristX,rightWristY,20);
-    song_peter_pan.stop();
+    status_2.stop();
     if(song_2 == false)
     {
-      song_harry_potter.play();
-      document.getElementById("song_name").innerHTML = "Song Name - Peter Pan";
+      status_2.play();
+      document.getElementById("song_name").innerHTML = "Song Name - Harry Potter Theme";
     }
   }
 }
